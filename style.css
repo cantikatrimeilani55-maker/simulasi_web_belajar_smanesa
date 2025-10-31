@@ -1,0 +1,115 @@
+/* Reset Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Latar belakang terang default */
+    color: #333; /* Warna teks gelap default */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Tombol Dark Mode */
+#darkModeToggle {
+    background-color: #ffc107;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Konten Utama */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid Materi */
+.materi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.materi-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.materi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.materi-card h3 {
+    color: #007bff;
+}
+
+.btn-akses {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+/* ============================= */
+/* STYLING KHUSUS DARK MODE */
+/* ============================= */
+
+body.dark-mode {
+    background-color: #121212; /* Latar belakang gelap */
+    color: #e0e0e0; /* Warna teks terang */
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .materi-card {
+    background-color: #1f1f1f;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .materi-card h3 {
+    color: #bb86fc; /* Warna aksen yang cocok untuk dark mode */
+}
+
+body.dark-mode .btn-akses {
+    background-color: #03dac6;
+    color: #121212;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
